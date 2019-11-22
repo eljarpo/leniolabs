@@ -47,7 +47,6 @@ class CongressMember extends Component {
     render() {
         const { loading, selectedRoles, memberInfo } = this.state
         const member = this.props.members.find(m => m.id === this.props.match.params.id)
-        // const { members } = this.props
         const loading2= <p>Loading...</p>
         const details = memberInfo.roles ? memberInfo.roles.map((role, idx) => 
                                 <li key={idx} onClick={() => this.handleRoles(idx)}>{role.chamber+', '+role.state+', '+moment(role.start_date).format('YYYY')+', '+(role.party=='D' ? 'Democrat' : 'Republican')}
