@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/leniolabs/static/css/main.8d3da61b.chunk.css",
-    "main.js": "/leniolabs/static/js/main.fe0c0522.chunk.js",
-    "main.js.map": "/leniolabs/static/js/main.fe0c0522.chunk.js.map",
+    "main.js": "/leniolabs/static/js/main.5a111b6d.chunk.js",
+    "main.js.map": "/leniolabs/static/js/main.5a111b6d.chunk.js.map",
     "runtime-main.js": "/leniolabs/static/js/runtime-main.22362ee6.js",
     "runtime-main.js.map": "/leniolabs/static/js/runtime-main.22362ee6.js.map",
     "static/css/2.15314edf.chunk.css": "/leniolabs/static/css/2.15314edf.chunk.css",
     "static/js/2.53f4066e.chunk.js": "/leniolabs/static/js/2.53f4066e.chunk.js",
     "static/js/2.53f4066e.chunk.js.map": "/leniolabs/static/js/2.53f4066e.chunk.js.map",
     "index.html": "/leniolabs/index.html",
-    "precache-manifest.91718733d109ae2324200059d561aa98.js": "/leniolabs/precache-manifest.91718733d109ae2324200059d561aa98.js",
+    "precache-manifest.812b96a234144d2958568d023678528b.js": "/leniolabs/precache-manifest.812b96a234144d2958568d023678528b.js",
     "service-worker.js": "/leniolabs/service-worker.js",
     "static/css/2.15314edf.chunk.css.map": "/leniolabs/static/css/2.15314edf.chunk.css.map",
     "static/css/main.8d3da61b.chunk.css.map": "/leniolabs/static/css/main.8d3da61b.chunk.css.map"
@@ -19,6 +19,6 @@
     "static/css/2.15314edf.chunk.css",
     "static/js/2.53f4066e.chunk.js",
     "static/css/main.8d3da61b.chunk.css",
-    "static/js/main.fe0c0522.chunk.js"
+    "static/js/main.5a111b6d.chunk.js"
   ]
 }
