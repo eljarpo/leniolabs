@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
+import * as actions from '../store/actions'
 
 
 class CongressList extends Component {
@@ -17,7 +19,6 @@ class CongressList extends Component {
 
     }
     componentDidMount () {
-        this.fetchCongress('116', 'senate')
         
     }
     handleInput = (e) => {
@@ -55,7 +56,8 @@ class CongressList extends Component {
     }
 
     render() {
-        const { members, searchInput, advanced_search, advancedSearchInput, searchKey, loading, currentPage, membersPerPage } = this.state
+        const { searchInput, advanced_search, advancedSearchInput, searchKey, currentPage, membersPerPage } = this.state
+        const { members, loading } = this.props
        
         const searchedMembers = members.filter(member => member.first_name.toLowerCase().includes(searchInput.toLowerCase())
          || member.last_name.toLowerCase().includes(searchInput.toLowerCase())
@@ -134,5 +136,11 @@ class CongressList extends Component {
         )
     }
 }
+const mapStateToProps = state => {
+    return {
+        members: state.data.members,
+        loading: state.data.loading,
+    }
+  }
 
-export default CongressList;
+export default connect(mapStateToProps)(CongressList);
